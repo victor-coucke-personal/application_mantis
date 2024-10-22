@@ -1,7 +1,9 @@
 #include <iostream>
+#include <limits>
 #include "Station.h"
 #include "ProcessFlow.h"
 #include "FinishedProducts.h"
+
 
 void showMenu() {
     std::cout << "1. Set up process flow (Ex: A->B->C)\n";
@@ -11,7 +13,7 @@ void showMenu() {
     std::cout << "5. Exit\n";
 }
 
-int main() {
+int main(int argc, char *argv[]) {
     ProcessFlow processFlow;
     FinishedProducts finishedProducts;
     finishedProducts.loadProducts();
@@ -22,9 +24,9 @@ int main() {
         std::cout << "Choose an option: ";
         std::cin >> choice;
         
-        if (std::cin.fail()) {
-            std::cin.clear();
-            std::cin.ignore(10000, '\n');
+        if (std::cin.fail()) { // check if last cin action failed (e.g. String into integer variable)
+            std::cin.clear(); // clear error flags
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear input buffer up to size of the stream
             std::cout << "Invalid input. Please enter a number.\n";
             continue;
         }
@@ -75,3 +77,4 @@ int main() {
     }
     return 0;
 }
+

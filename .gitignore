@@ -32,7 +32,7 @@
 *.app
 
 /build
-
+/out
 # Created by https://www.gitignore.io/api/visualstudiocode
 # Edit at https://www.gitignore.io/?templates=visualstudiocode
 
