@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/console_app.dir/includes_CXX.rsp -g -o CMakeFiles\\console_app.dir\\src\\FinishedProducts.cpp.obj -c \"C:\\Users\\victor\\OneDrive - Achilles\\Documents\\thuis\\old_work\\application_mantis\\src\\FinishedProducts.cpp\"",
+  "file": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/src/FinishedProducts.cpp",
+  "output": "CMakeFiles/console_app.dir/src/FinishedProducts.cpp.obj"
+},
+{
+  "directory": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/console_app.dir/includes_CXX.rsp -g -o CMakeFiles\\console_app.dir\\src\\ProcessFlow.cpp.obj -c \"C:\\Users\\victor\\OneDrive - Achilles\\Documents\\thuis\\old_work\\application_mantis\\src\\ProcessFlow.cpp\"",
+  "file": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/src/ProcessFlow.cpp",
+  "output": "CMakeFiles/console_app.dir/src/ProcessFlow.cpp.obj"
+},
+{
+  "directory": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/console_app.dir/includes_CXX.rsp -g -o CMakeFiles\\console_app.dir\\src\\Station.cpp.obj -c \"C:\\Users\\victor\\OneDrive - Achilles\\Documents\\thuis\\old_work\\application_mantis\\src\\Station.cpp\"",
+  "file": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/src/Station.cpp",
+  "output": "CMakeFiles/console_app.dir/src/Station.cpp.obj"
+},
+{
+  "directory": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/console_app.dir/includes_CXX.rsp -g -o CMakeFiles\\console_app.dir\\src\\main.cpp.obj -c \"C:\\Users\\victor\\OneDrive - Achilles\\Documents\\thuis\\old_work\\application_mantis\\src\\main.cpp\"",
+  "file": "C:/Users/victor/OneDrive - Achilles/Documents/thuis/old_work/application_mantis/src/main.cpp",
+  "output": "CMakeFiles/console_app.dir/src/main.cpp.obj"
+}
+]
