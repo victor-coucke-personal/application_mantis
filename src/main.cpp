@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
             
             if (std::cin.fail()) {
                 std::cin.clear();
-                std::cin.ignore(10000, '\n');
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear input buffer up to size of the stream
                 std::cout << "Invalid input. Must be a number.\n";
                 continue;
             }
