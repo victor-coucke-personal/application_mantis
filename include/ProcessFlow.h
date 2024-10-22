@@ -5,9 +5,13 @@
 #include <map>
 #include "Station.h"
 
+const std::string validChars = "ABCD->";  // Constant string containing valid characters
+
 class ProcessFlow {
     std::vector<Station*> stations;
     std::map<std::string, int> stationCounter;
+    
+
 
 public:
     // Constructor defined inline since it's trivial

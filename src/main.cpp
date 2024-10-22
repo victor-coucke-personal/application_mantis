@@ -1,5 +1,7 @@
 #include <iostream>
 #include <limits>
+#include <string>
+#include <cctype>
 #include "Station.h"
 #include "ProcessFlow.h"
 #include "FinishedProducts.h"
@@ -33,9 +35,28 @@ int main(int argc, char *argv[]) {
 
         if (choice == 1) {
             std::string flow;
-            std::cout << "Enter process flow (Ex: A->B->C): ";
+            std::cout << "Enter process flow (Ex: A->B->C->D): ";
             std::cin >> flow;
 
+            bool isValid = true;  // Flag to track if the string is valid
+
+            for (char ch : flow) {
+                // Convert to uppercase to handle lowercase letters
+                ch = std::toupper(ch);
+
+                // If the character is not in the valid characters string
+                if (validChars.find(ch) == std::string::npos) {
+                    isValid = false;  // Mark the string as invalid
+                    break;            // No need to check further
+                }
+            }
+
+            if (!isValid) {
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear input buffer up to size of the stream
+                std::cout << "Invalid input. Please enter only one the following characters: A, B, C, D, -, or >\n";
+                continue;
+            }
+    
             processFlow = ProcessFlow();  // Reset the flow
             for (char station : flow) {
                 if (station == 'A') processFlow.addStation(new StationA());
@@ -43,6 +64,8 @@ int main(int argc, char *argv[]) {
                 else if (station == 'C') processFlow.addStation(new StationC());
                 else if (station == 'D') processFlow.addStation(new StationD(new StationA()));
             }
+            std::cout << "Programmed program flow is: " << flow << "\n";
+
         } 
         else if (choice == 2) {
             int material;
