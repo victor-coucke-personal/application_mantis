@@ -3,6 +3,8 @@
 
 #include <string>
 
+const std::string validChars = "ABCD->";  // Constant string containing valid station characters
+
 // Base class for stations
 class Station {
 public:

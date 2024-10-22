@@ -1,7 +1,6 @@
 #include "Station.h"
 #include <iostream>
 
-const std::string validChars = "ABCD->";  // Constant string containing valid station characters
 
 int StationA::process(int material) {
     return material + 1;
