@@ -5,8 +5,6 @@
 cmake_minimum_required(VERSION 3.12)
 # set(CMAKE_CXX_STANDARD 17)
 
-
-
 #####################
 #      Project      #
 #####################
@@ -54,21 +52,6 @@ project(${LOCAL_PROJECT_NAME}
         LANGUAGES CXX)
 
 add_executable(${LOCAL_PROJECT_NAME} ${SOURCES})
-
-# target_include_directories(${LOCAL_PROJECT_NAME}
-#     PRIVATE 
-#         ${PROJECT_SOURCE_DIR}/include
-# )
-# list(TRANSFORM HEADERS PREPEND "include/")
-# list(TRANSFORM SOURCES PREPEND "src/")
-
-# target_include_directories(${LOCAL_PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-# target_sources(${LOCAL_PROJECT_NAME} PRIVATE ${SOURCES} ${HEADERS})
-# target_compile_definitions(${LOCAL_PROJECT_NAME} PRIVATE ${DEFINES})
-# target_compile_options(${LOCAL_PROJECT_NAME} PRIVATE ${OPTIONS})
-
-# set_target_properties(${LOCAL_PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "bin")
-
 
 
 ####################

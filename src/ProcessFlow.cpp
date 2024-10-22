@@ -17,16 +17,12 @@ int ProcessFlow::processMaterial(int material) {
     for (size_t i = 0; i < stations.size(); ++i) {
         stationCounter[stations[i]->getName()]++;
         processedMaterial = stations[i]->process(processedMaterial);
-
-        if (processedMaterial == -2) {  // If StationC says to skip next station
-            ++i;
-        }
     }
     return processedMaterial;
 }
 
 void ProcessFlow::showStationUsage() const {
     for (const auto& entry : stationCounter) {
-        std::cout << "Station " << entry.first << " has been called " << entry.second << " times.\n";
+        std::cout << "Station " << entry.first << " has been called " << entry.second << " times.\n"; 
     }
 }
