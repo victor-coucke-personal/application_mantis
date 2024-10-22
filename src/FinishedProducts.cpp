@@ -14,18 +14,30 @@ void FinishedProducts::showProducts() const {
 }
 
 void FinishedProducts::saveProducts() const {
-    std::ofstream outFile("products.txt");
+    std::ofstream outFile("../products.txt");
     for (int product : products) {
         outFile << product << "\n";
     }
 }
 
 void FinishedProducts::loadProducts() {
-    std::ifstream inFile("products.txt");
-    if (inFile) {
-        int product;
-        while (inFile >> product) {
-            products.push_back(product);
-        }
+    int product;
+    // Open the file "products.txt" for reading
+    std::ifstream inputFile("../products.txt");
+    // Read a single integer from the file
+    inputFile >> product;
+
+    // Check if the reading was successful
+    if (inputFile.fail()) {
+        std::cout << "No previous result found" << "\n";
     }
+    else {
+        std::cout << "previous processed result found: " << product << "\n";
+        products.push_back(product);
+    }
+
+    // Close the file
+    inputFile.close();
+
 }
+

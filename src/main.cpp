@@ -6,11 +6,11 @@
 
 
 void showMenu() {
-    std::cout << "1. Set up process flow (Ex: A->B->C)\n";
-    std::cout << "2. Input raw material\n";
-    std::cout << "3. Show all finished products\n";
-    std::cout << "4. Show the number of times each station has been processed\n";
-    std::cout << "5. Exit\n";
+    std::cout << "1. Set up process flow (Ex: A->B->C).\n";
+    std::cout << "2. Input raw material.\n";
+    std::cout << "3. Show all finished products.\n";
+    std::cout << "4. Show the number of times each station has been processed.\n";
+    std::cout << "5. Exit.\n";
 }
 
 int main(int argc, char *argv[]) {
